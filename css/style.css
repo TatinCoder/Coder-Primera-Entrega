@@ -1,0 +1,523 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* IMPORT DE FONT */
+@font-face {
+    font-family: "Alata";
+    src: url(./Alata.ttf);
+}
+
+/* CSS BODY, HEADER */
+body {
+    /* Font General */
+    font-family: "Alata";
+    /* Background general */
+}
+
+.header {
+    background-color: #caff42;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+    position: static;
+} 
+
+/* Header distinto por el color del encabezado */
+.header-historia {
+    background-color: #f58723;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+    position: static;
+} 
+
+/* Tamaños de logos */
+.logo {
+    height: 100px;
+}
+
+/* Contorno del IG */
+.redes {
+    background-color: #2020205e;
+    padding: 5px 15px;
+    border-radius: 40px;
+}
+
+.redes .ig {
+    height: 30px;
+}
+
+.ul-header {
+    align-items: center;
+    list-style: none;
+    display: flex;  
+    font-size: 1.5rem;
+    gap: 30px;
+    
+}
+
+a {
+    text-decoration: none;
+    color:#444444;
+}
+
+nav a:hover {
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.575);
+}
+
+.actual {
+    background-color: #2020205e;
+    padding: 5px 15px;
+    border-radius: 40px;
+}
+
+
+/* main */
+
+/* NOTICIAS DESTACADAS */
+
+.introduccion {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 50px;
+
+    /* Fondo de pantalla del primer scroll */
+    background-image: url(../img/fondo-index.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.noticias {
+    background-color: rgba(61, 61, 61, 0.692);
+    position: relative;
+    width: 390px;
+    height: 880px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 2px rgba(43, 43, 43, 0.377);
+    margin-bottom: 50px;
+}
+
+.noticias .imagenes {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px rgba(43, 43, 43, 0.377);
+}
+
+.imagenes img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.titulo-img {
+    color: azure;
+    margin: 20px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.overlay {
+    background-color: rgba(75, 75, 75, 0.603);
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s;
+}
+
+.overlay p {
+    color: azure;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 5px; /* Correccion de texto para estar en la mitad */
+    text-align: center;
+}
+
+.imagenes:hover .overlay {
+    height: 15%;
+    cursor: pointer;
+}
+
+/* Hover del mouse para la imagen */
+.imagenes:hover img,
+.imagenes:focus img {
+    transform: scale(1.2);
+}
+
+
+/* ULTIMO CAMPEON */
+
+.ultimo-campeon {
+    position: relative;
+    overflow: hidden;
+    width: 750px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 2px rgba(29, 29, 29, 0.534);
+}
+
+.ultimo-campeon .titulo-lc h2{
+    background-color: rgba(32, 32, 32, 0.747);
+    color: azure;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.ultimo-img img {
+    width: 750px;
+    height: 700px;
+    /* object-fit: cover; -- Lo saco porque se ve mas estirada la foto */
+    transition: 0.5s;
+}
+
+.ultimo-img:hover img,
+.ultimo-img:focus img {
+    transform: scale(1.2);
+}
+
+
+/* UBICACION */
+
+.ubicacion {
+    background-color: #d0e0eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 0px;
+}
+
+.titulo-mapa {
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.gmaps {
+    border-radius: 15px;
+}
+
+.mapa-texto {
+    text-align: center;
+    width: 400px;
+}
+
+.mapa-parrafo {
+    padding-top: 10px;
+    font-weight: 10;
+}
+
+/* VIDEOS */
+
+.videos {
+    background-color: #88abc2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    padding: 50px 0px;
+}
+
+.video-titulo-1 {   
+    padding-bottom: 20px;
+}
+
+.video-titulo-2 {   
+    padding-bottom: 20px;
+
+}
+
+.video {
+    border-radius: 15px;
+}
+
+/* NOSOTROS */
+
+.nosotros {
+    background-image: url(../img/fondo-nosotros.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    gap: 0px 100px;
+    padding: 50px 0px;
+
+    /* Grid */
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 1fr 1fr;
+    grid-template-areas: 
+    ". pregunta-1 inicios ."
+    ". pregunta-2 inicios .";
+}
+
+.pregunta-1 {
+    grid-area: pregunta-1;
+    color: azure;
+    background-color: #1f1f1fbb;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    width: 500px;
+}
+
+.pregunta-2 {
+    grid-area: pregunta-2;
+    color: azure;
+    background-color: #1f1f1fbb;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    width: 500px;
+}
+
+.pregunta-1 h2 {
+    padding-bottom: 15px;
+}
+
+.pregunta-2 h2 {
+    padding-bottom: 15px;
+}
+
+.inicios {
+    grid-area: inicios;
+    position: relative;
+    width: 700px;
+    height: 500px;
+}
+
+.inicios img {
+    width: 700px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.titulo-inicios {
+    background-color: #1f1f1fbe;
+    border-radius: 15px;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    transition: 0.5s;
+}
+
+.titulo-inicios h2 {
+    color: azure;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 5px; /* Correccion de texto para estar en la mitad */
+}
+
+.parrafo-inicios {
+    color: azure;
+    display: flex;
+    font-weight: 100;
+    /* Lo centro con padding porque no se como hacerlo */
+    padding: 100px 100px;
+}
+
+.inicios:hover .titulo-inicios {
+    height: 100%;
+}
+ 
+/* GAMING */
+
+.opiniones {
+    background-color: #d0e0eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.participantes-op{
+    text-align: center;
+    padding: 50px 0px;
+    width: 500px;
+}
+
+.titulo-op {
+    padding-bottom: 15px;
+}
+
+.parrafo-op{
+    padding-bottom: 30px;
+}
+
+.participantes-op img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.nombre-op{
+    padding: 5px;
+    font-size: 0.75rem;
+}
+
+
+/* FOOTER */
+
+/* SPONSORS */
+
+.sponsors{
+    background-color: #49708a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.sponsors-gaming{
+    background-color: #09456c;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.sponsors-historia{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.sponsors-contacto{
+    background-color: #606060;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.sponsors-nosotros{
+    background-color: #606060;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+
+
+.sponsors-logos{
+    display: flex;
+    gap: 20px;
+}
+
+.sponsors-titulo {
+    color: azure;
+    padding-bottom: 10px;
+}
+
+.sponsors-logos div{
+    overflow: hidden;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.sponsors-logos img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* NAV */
+
+.pie-pagina {
+    background-color: #caff42;
+    position: static;
+    display: flex;
+    /* Column para que los derechos esten abajo */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+} 
+
+.pie-pagina-historia {
+    background-color: #f58723;
+    position: static;
+    display: flex;
+    /* Column para que los derechos esten abajo */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+} 
+
+.ul-pie {
+    list-style: none;
+    display: flex;  
+    font-size: 1rem;
+    gap: 20px;
+}
+
+.derechos {
+    margin-top: 10px;
+    font-size: 0.75rem;
+}
+
+.ul-pie a:hover {
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.575);
+}
